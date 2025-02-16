@@ -1,14 +1,10 @@
-const navItem = document.querySelectorAll("a");
+const input = document.querySelector('input');
+const button = document.querySelector('button');
 
-navItem.forEach((item) =>{
-    item.style.color = "blue";
-    item.style.fontSize = "24px";
-    item.style.padding = "24px 0px";
+button.addEventListener("click", function(){
+    const inputValue = input.value;
+    for(let i = 1 ; i <= 10; i++){
+        document.write(inputValue + ' X ' + i + ' = ' + inputValue*i + '<br>');
+    }
+    
 });
-const boxes = document.querySelectorAll('.box');
-
-let numberr = 1;
-for( box of boxes){
-    box.innerText = `box no ${numberr}`;
-    numberr++;
-}
