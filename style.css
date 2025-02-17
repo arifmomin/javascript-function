@@ -17,16 +17,30 @@ a{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
 }
-input, button{
+.btn-div{
+    display: flex;
+    gap: 15px;
+}
+button{
     padding: 10px 20px;
     border-radius: 8px;
     border: 2px solid black;
     background: transparent;
-}
-button{
+    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li{
+    font-size: 16px;
+    font-weight: 500;    
+    }
 }
